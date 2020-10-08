@@ -1,1 +1,32 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow clqqq</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        h1 {
+            margin: 0;
+        }
+        body {
+            background: url('./bg4.jpg') no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: #F56C6C;">call me maybe</h1>
+        <h1 id="time"></h1>
+    </div>
+    <script>
+        var timeDom = document.getElementById('time');
+        setInterval(function() {
+            var now = new Date().toLocaleString();
+            timeDom.innerHTML = now
+        }, 1000)
+    </script>
+</body>
+</html>
